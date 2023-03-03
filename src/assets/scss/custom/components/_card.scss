@@ -1,9 +1,7 @@
 // 
 // _card.scss
 // 
-
 .card {
-    margin-bottom: $grid-gutter-width;
     box-shadow: $box-shadow;
 }
 
@@ -36,4 +34,3 @@ $value in $theme-colors {
         @include card-header-variant($value);
     }
 }
-
