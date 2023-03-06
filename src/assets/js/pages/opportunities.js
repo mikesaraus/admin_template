@@ -1,0 +1,40 @@
+// pagination Table
+new gridjs.Grid({
+    columns: [
+        'Tipo',
+        'Ciudad',
+        'Direccion',
+        'Descripcion',
+        'Estado',
+    ],
+    pagination: {
+        enabled: true,
+        limit: 10,
+        reaplaceTr: true,
+        buttons: {
+            previous: "<i class='fa fa-arrow-left'></i>",
+            next: "<i class='fa fa-arrow-right'></i>",
+        },
+    },
+    height: 'calc(100vh - 350px)',
+    data: [
+        ['INfree', 'Madrid', 'Ac sed lacus Enim maecenas eu', 'Nullam ac tortor vitae purus faucibus orn, Nullam ac tortor vitae purus faucibus orn', 'Borrador'],
+        ['JointVenture', 'Sevilla', 'Ac sed lacus Enim maecenas eu', 'Nullam ac tortor vitae purus faucibus orn, Nullam ac tortor vitae purus faucibus orn', 'Borrador'],
+        ['INbruto', 'Barcelona', 'Ac sed lacus Enim maecenas eu', 'Nullam ac tortor vitae purus faucibus orn, Nullam ac tortor vitae purus faucibus orn', 'Pendiente Revision'],
+        ['INbruto', 'Barcelona', 'Ac sed lacus Enim maecenas eu', 'Nullam ac tortor vitae purus faucibus orn, Nullam ac tortor vitae purus faucibus orn', 'Publicado'],
+        ['INbruto', 'Barcelona', 'Ac sed lacus Enim maecenas eu', 'Nullam ac tortor vitae purus faucibus orn, Nullam ac tortor vitae purus faucibus orn', 'Pendiente Revision'],
+        ['INfree', 'Madrid', 'Ac sed lacus Enim maecenas eu', 'Nullam ac tortor vitae purus faucibus orn, Nullam ac tortor vitae purus faucibus orn', 'Borrador'],
+        ['JointVenture', 'Sevilla', 'Ac sed lacus Enim maecenas eu', 'Nullam ac tortor vitae purus faucibus orn, Nullam ac tortor vitae purus faucibus orn', 'Borrador'],
+        ['INbruto', 'Barcelona', 'Ac sed lacus Enim maecenas eu', 'Nullam ac tortor vitae purus faucibus orn, Nullam ac tortor vitae purus faucibus orn', 'Pendiente Revision'],
+        ['INbruto', 'Barcelona', 'Ac sed lacus Enim maecenas eu', 'Nullam ac tortor vitae purus faucibus orn, Nullam ac tortor vitae purus faucibus orn', 'Publicado'],
+        ['INbruto', 'Barcelona', 'Ac sed lacus Enim maecenas eu', 'Nullam ac tortor vitae purus faucibus orn, Nullam ac tortor vitae purus faucibus orn', 'Pendiente Revision'],
+        ['INfree', 'Madrid', 'Ac sed lacus Enim maecenas eu', 'Nullam ac tortor vitae purus faucibus orn, Nullam ac tortor vitae purus faucibus orn', 'Borrador'],
+        ['JointVenture', 'Sevilla', 'Ac sed lacus Enim maecenas eu', 'Nullam ac tortor vitae purus faucibus orn, Nullam ac tortor vitae purus faucibus orn', 'Borrador'],
+        ['INbruto', 'Barcelona', 'Ac sed lacus Enim maecenas eu', 'Nullam ac tortor vitae purus faucibus orn, Nullam ac tortor vitae purus faucibus orn', 'Pendiente Revision'],
+        ['INbruto', 'Barcelona', 'Ac sed lacus Enim maecenas eu', 'Nullam ac tortor vitae purus faucibus orn, Nullam ac tortor vitae purus faucibus orn', 'Publicado'],
+        ['INbruto', 'Barcelona', 'Ac sed lacus Enim maecenas eu', 'Nullam ac tortor vitae purus faucibus orn, Nullam ac tortor vitae purus faucibus orn', 'Pendiente Revision'],
+        ['INfree', 'Madrid', 'Ac sed lacus Enim maecenas eu', 'Nullam ac tortor vitae purus faucibus orn, Nullam ac tortor vitae purus faucibus orn', 'Borrador'],
+        ['JointVenture', 'Sevilla', 'Ac sed lacus Enim maecenas eu', 'Nullam ac tortor vitae purus faucibus orn, Nullam ac tortor vitae purus faucibus orn', 'Borrador'],
+        ['INbruto', 'Barcelona', 'Ac sed lacus Enim maecenas eu', 'Nullam ac tortor vitae purus faucibus orn, Nullam ac tortor vitae purus faucibus orn', 'Pendiente Revision'],
+    ],
+}).render(document.getElementById('table-pagination'));

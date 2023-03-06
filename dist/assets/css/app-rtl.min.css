@@ -37,6 +37,7 @@
   --bs-body-bg: #f9f6fa;
   --bs-body-color: #1a1823;
   --bs-body-color-rgb: 26, 24, 35;
+  --bs-accent-color: #45C49C;
   --bs-display-none: none;
   --bs-display-block: block;
   --bs-light: #f8f7fc;
@@ -130,6 +131,7 @@
   --bs-body-bg: #1b1c31;
   --bs-body-color: #9295a4;
   --bs-body-color-rgb: 26, 24, 35;
+  --bs-accent-color: #45C49C;
   --bs-display-none: block;
   --bs-display-block: none;
   --bs-card-title-desc: #9295a4;
@@ -181,6 +183,26 @@
   --bs-input-placeholder-color: #9295a4;
   --bs-input-group-addon-bg: #363652;
   --bs-input-check-border: #353556;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 72, 118, 0.1) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: rgba(0, 72, 118, 0.1);
 }
 
 #page-topbar {
@@ -3816,7 +3838,7 @@ input[switch=dark]:checked + label {
 .gridjs-wrapper {
   -webkit-box-shadow: none;
           box-shadow: none;
-  border: 1px solid var(--bs-border-color);
+  border: 0px solid var(--bs-border-color);
 }
 .gridjs-wrapper::-webkit-scrollbar {
   -webkit-appearance: none;
@@ -3843,14 +3865,16 @@ input[switch=dark]:checked + label {
 
 th.gridjs-th,
 td.gridjs-td {
-  border: 1px solid var(--bs-border-color);
+  border: none;
+  height: 50px;
+  border-bottom: 1px solid var(--bs-border-color);
   padding: 0.75rem 0.75rem;
   background-color: var(--bs-dropdown-bg);
 }
 
 th.gridjs-th {
   border-top: 0;
-  color: var(--bs-table-color);
+  color: #004876;
   background-color: var(--bs-table-head-bg);
 }
 th.gridjs-th-sort:focus, th.gridjs-th-sort:hover {
@@ -3860,9 +3884,8 @@ th.gridjs-th-sort:focus, th.gridjs-th-sort:hover {
 .gridjs-footer {
   -webkit-box-shadow: none;
           box-shadow: none;
-  border: 1px solid var(--bs-border-color);
+  border: 0px solid var(--bs-border-color);
   border-top: 0;
-  background-color: var(--bs-table-head-bg);
 }
 
 .gridjs-pagination {
@@ -3870,7 +3893,7 @@ th.gridjs-th-sort:focus, th.gridjs-th-sort:hover {
 }
 .gridjs-pagination .gridjs-pages button {
   border: none !important;
-  border-radius: 30px !important;
+  border-radius: 5px !important;
   margin: 0 5px;
   border: none;
   min-width: 32px;
@@ -3879,7 +3902,7 @@ th.gridjs-th-sort:focus, th.gridjs-th-sort:hover {
   text-align: center;
   line-height: 32px;
   background-color: transparent;
-  color: var(--bs-body-color);
+  color: var(--bs-accent-color);
 }
 .gridjs-pagination .gridjs-pages button:disabled, .gridjs-pagination .gridjs-pages button:hover:disabled, .gridjs-pagination .gridjs-pages button[disabled] {
   color: #adb5bd;
@@ -3897,7 +3920,7 @@ th.gridjs-th-sort:focus, th.gridjs-th-sort:hover {
   background-color: transparent;
 }
 .gridjs-pagination .gridjs-pages button.gridjs-currentPage {
-  background-color: #004876;
+  background-color: #45C49C;
   color: #fff;
   border-color: #004876;
 }

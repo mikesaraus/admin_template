@@ -1,0 +1,21 @@
+// Scrollbar Works on Firefox
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba($primary, 0.1) transparent;
+}
+
+// Scrollbar Works on Chrome, Edge, and Safari
+*::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: rgba($primary, 0.1);
+}

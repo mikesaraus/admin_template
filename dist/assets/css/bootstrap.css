@@ -14700,20 +14700,4 @@ a {
 .popover {
   -webkit-box-shadow: 0 5px 6px rgba(52, 58, 64, 0.1);
           box-shadow: 0 5px 6px rgba(52, 58, 64, 0.1);
-}ss-bar::before {
-  content: "";
-  position: absolute;
-  width: 4px;
-  height: 4px;
-  background-color: #fff;
-  border-radius: 7px;
-  right: 2px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.popover {
-  -webkit-box-shadow: 0 5px 6px rgba(52, 58, 64, 0.1);
-          box-shadow: 0 5px 6px rgba(52, 58, 64, 0.1);
 }

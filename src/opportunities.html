@@ -1,0 +1,67 @@
+@@include("partials/main.html")
+
+<head>
+
+    @@include("partials/title-meta.html", {"title": "OportunidadesIN"})
+
+    <!-- gridjs css -->
+    <link rel="stylesheet" href="assets/libs/gridjs/theme/mermaid.min.css"> @@include("partials/head-css.html")
+
+</head>
+
+<body data-topbar="dark">
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        @@include("partials/topbar.html", {"pagetitle": "layouts", "title": "OportunidadesIN"}) @@include("partials/sidebar.html")
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+            <div class="page-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-header justify-content-between d-flex align-items-center border-0 mt-4 py-2">
+                                    <div class="card-title">
+                                        <h4 class="fw-medium m-0">OportunidadesIN<span class="text-muted">(Other User)</span></h4>
+                                    </div>
+                                </div>
+                                <!-- end card header -->
+                                <div class="card-body">
+                                    <div id="table-pagination"></div>
+                                </div>
+                                <!-- end card body -->
+                            </div>
+                            <!-- end card -->
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
+                </div>
+                <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
+
+            @@include("partials/footer.html")
+        </div>
+        <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+    @@include("partials/vendor-scripts.html")
+
+    <!-- gridjs js -->
+    <script src="assets/libs/gridjs/gridjs.umd.js"></script>
+
+    <script src="assets/js/pages/opportunities.js"></script>
+
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>

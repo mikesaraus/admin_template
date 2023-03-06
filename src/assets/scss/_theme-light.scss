@@ -48,6 +48,8 @@
     --#{$variable-prefix}body-bg: #f9f6fa;
     --#{$variable-prefix}body-color: #{$gray-700};
     --#{$variable-prefix}body-color-rgb: #{to-rgb($body-color)};
+    // accent
+    --#{$variable-prefix}accent-color: #{$accent};
     // Display
     --#{$variable-prefix}display-none: none;
     --#{$variable-prefix}display-block: block;

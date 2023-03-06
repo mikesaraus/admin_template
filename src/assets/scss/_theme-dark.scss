@@ -61,6 +61,8 @@
     --#{$variable-prefix}body-bg: #1b1c31;
     --#{$variable-prefix}body-color: #{$gray-400};
     --#{$variable-prefix}body-color-rgb: #{to-rgb($body-color)};
+    // accent
+    --#{$variable-prefix}accent-color: #{$accent};
     // Display
     --#{$variable-prefix}display-none: block;
     --#{$variable-prefix}display-block: none;
