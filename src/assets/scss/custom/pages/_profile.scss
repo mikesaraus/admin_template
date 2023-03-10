@@ -1,0 +1,27 @@
+.profile {
+    .avatar-wrapper {
+        position: relative;
+        width: 71.74px;
+        height: 71.74px;
+        border-radius: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        .btn-edit {
+            position: absolute;
+            cursor: pointer;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            right: 0;
+            bottom: 0;
+            text-align: center;
+        }
+    }
+    .profile-info {
+        button {
+            text-align: left;
+        }
+    }
+}

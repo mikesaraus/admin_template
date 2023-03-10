@@ -1,0 +1,41 @@
+.pdf-content {
+    .thumbnail-list {
+        overflow-y: auto;
+        overflow-x: hidden;
+        max-height: calc(100vh - 400px);
+        width: 100%;
+        .thumbnail {
+            width: 80px;
+            height: 117px;
+            position: relative;
+            margin-left: 15px;
+            margin-bottom: 15px;
+            margin-right: 15px;
+            background-color: $light;
+            &::before {
+                content: attr(number);
+                position: absolute;
+                margin-left: -15px;
+                color: $text-muted;
+            }
+            .icon {
+                width: 50%;
+                height: 100%;
+                background-image: url(/assets/images/icon-pdf.svg);
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: contain;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+            }
+        }
+    }
+    .preview {
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+}

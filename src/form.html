@@ -1,0 +1,149 @@
+@@include("partials/main.html")
+
+<head>
+
+    @@include("partials/title-meta.html", {"title":"Subir Estudio de Mercado"})
+
+    <!-- plugins -->
+    <link href="assets/libs/choices.js/public/assets/styles/choices.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/flatpickr/flatpickr.min.css" rel="stylesheet"> @@include("partials/head-css.html")
+
+</head>
+
+<body data-topbar="dark">
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        @@include("partials/topbar.html", {"pagetitle":"layouts","title":"Subir Estudio de Mercado"}) @@include("partials/sidebar.html")
+
+        <div class="main-content">
+            <div class="page-content">
+                <div class="container-fluid">
+                    <div class="card">
+                        <div class="card-body p-5">
+
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <form class="needs-validation" novalidate="">
+                                        <div class="card border-0 shadow-none">
+                                            <div class="card-title">
+                                                <h4 class="fw-500">Subir Estudio de Mercado</h4>
+                                                <p>Tellus elementum congue varius amet viverra nunc elit at lorem. Eget ac magnis orci in volutpat rhoncus tortor. </p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="mb-4">
+                                                    <input class="form-control form-control-lg" type="text" placeholder="Direccion">
+                                                </div>
+                                                <div class="mb-4">
+                                                    <div class="datepicker">
+                                                        <input type="text" class="form-control form-control-lg" id="datepicker-basic" placeholder="Fetcha">
+                                                        <span class="icon"><i class="mdi mdi-calendar-month-outline"></i></span>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <select class="form-control form-control-lg" data-trigger name="choices-single-default" id="choices-single-default">
+                                                        <option value="">Tipo</option>
+                                                        <option value="Choice 1">Choice 1</option>
+                                                        <option value="Choice 2">Choice 2</option>
+                                                        <option value="Choice 3">Choice 3</option>
+                                                    </select>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <input class="form-control form-control-lg" type="text" placeholder="Precio">
+                                                </div>
+                                                <div class="mb-4">
+                                                    <input class="form-control form-control-lg" type="text" placeholder="Dormitorios">
+                                                </div>
+                                                <div class="mb-4">
+                                                    <input class="form-control form-control-lg" type="text" placeholder="Baños">
+                                                </div>
+                                                <div class="row items-center">
+                                                    <div class="col-auto pt-2">
+                                                        <button type="button" class="btn btn-secondary d-flex align-items-center">
+                                                            <i class="bx bx-save font-size-24"></i>
+                                                            <span style="padding-left: 5px">Guardar datos</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="col-auto pt-2">
+                                                        <button type="button" class="btn btn-success d-flex align-items-center">
+                                                            <i class="bx bx-upload  font-size-24"></i>
+                                                            <span style="padding-left: 5px">Publicar Estudio</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="col-auto pt-2">
+                                                        <button type="button" class="btn bg-transparent text-danger d-flex align-items-center">
+                                                            <i class="bx bx-trash font-size-24"></i>
+                                                            <span style="padding-left: 5px">Eliminar Estudio</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end row -->
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="col-12 col-md-6 mt-sm-5">
+                                    <div class="card">
+                                        <div class="card-body p-4">
+                                            <div class="card-title">
+                                                <h4 class="d-flex align-items-center">
+                                                    <i class="uil-chat-info text-danger"></i>
+                                                    <span class="fw-semibold" style="padding-left: 5px;">Revisar</span>
+                                                </h4>
+                                            </div>
+                                            <div class="w-100">
+                                                <div class="text-muted">21-01-2023 22:31 PM</div>
+                                                <div style="max-width: 300px" class="py-2">Interdum consectetur libero id faucibus nisl tincidunt. Id diam maecenas ultricies mi</div>
+                                                <div class="row items-center mt-3">
+                                                    <div class="col-4"></div>
+                                                    <div class="col border-left">
+                                                        <div class="fw-semibold">Admin - Olivia Rhye<span class="text-muted fw-light" style="padding-left: 5px;">21-01-2023 22:31 PM</span></div>
+                                                        <p>Interdum consectetur libero id faucibus nisl tincidunt. Id diam maecenas ultricies mi</p>
+                                                    </div>
+                                                </div>
+
+                                                <hr class="my-5" />
+
+                                                <div class="text-muted">21-01-2023 22:31 PM</div>
+                                                <div style="max-width: 300px" class="py-2">Interdum consectetur libero id faucibus nisl tincidunt. Id diam maecenas ultricies mi </div>
+                                                <div class="form-floating mt-5">
+                                                    <textarea id="floatingTextarea2" class="form-control" placeholder="Sapien faucibus et molestie ac. Eget nullam non nisi" style="height: 164px"></textarea>
+                                                    <button type="button" class="btn btn-secondary">Enviar</button>
+                                                    <label for="floatingTextarea2" class="text-muted">Sapien faucibus et molestie ac. Eget nullam non nisi</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end row -->
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- container-fluid -->
+                </div>
+                <!-- End Page-content -->
+
+                @@include("partials/footer.html")
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+        @@include("partials/vendor-scripts.html")
+
+
+        <!-- plugins -->
+        <script src="assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+        <script src="assets/libs/flatpickr/flatpickr.min.js"></script>
+
+        <script src="assets/js/pages/form.init.js"></script>
+
+        <script src="assets/js/app.js"></script>
+
+
+</body>
+
+</html>

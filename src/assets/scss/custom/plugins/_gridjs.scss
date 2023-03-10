@@ -46,8 +46,82 @@ td.gridjs-td {
     background-color: var(--#{$variable-prefix}dropdown-bg);
 }
 
+td.gridjs-td {
+    vertical-align: top;
+    .cell-top-exapandable {
+        // display: flex;
+        // align-items: center;
+        // min-height: 50px;
+        // max-width: 100%;
+        // overflow: hidden;
+        padding-top: 7px;
+        margin-top: 10px;
+        * {
+            max-width: 100%;
+        }
+    }
+    .accordion {
+        .accordion-button {
+            align-items: start;
+            padding: 3px 7px;
+            &::after {
+                margin-top: 5px;
+            }
+            &:not(.collapsed) {
+                .text-ruby {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+// .gridjs-pagination {
+//     button {
+//         &[title='Previous'],
+//         &[title='Next'] {
+//             border: none !important;
+//             border-radius: 5px !important;
+//             margin: 0 5px !important;
+//             width: 0;
+//             min-width: 0;
+//             height: 32px;
+//             padding: 0;
+//             text-align: center;
+//             line-height: 32px;
+//             background-color: transparent;
+//             color: var(--bs-accent-color);
+//             &::before {
+//                 font-family: boxicons !important;
+//                 font-weight: 400;
+//                 font-style: normal;
+//                 font-variant: normal;
+//                 line-height: 1;
+//                 text-transform: none;
+//             }
+//         }
+//         &[title='Previous'] {
+//             visibility: hidden;
+//             &::before {
+//                 visibility: visible;
+//                 content: '\e9e3';
+//             }
+//         }
+//         &[title='Next'] {
+//             visibility: hidden;
+//             &::before {
+//                 visibility: visible;
+//                 content: '\e9e4';
+//             }
+//         }
+//     }
+// }
 th {
     &.gridjs-th {
+        &.gridjs-th-fixed {
+            box-shadow: none;
+        }
+        z-index: 1;
         border-top: 0;
         color: #004876;
         background-color: $table-head-bg;
@@ -61,6 +135,7 @@ th {
 }
 
 .gridjs-footer {
+    margin-top: 20px;
     box-shadow: none;
     border: 0px solid $table-border-color;
     border-top: 0;
@@ -72,8 +147,7 @@ th {
     .gridjs-pages button {
         border: none !important;
         border-radius: 5px !important;
-        margin: 0 5px;
-        border: none;
+        margin: 0 5px !important;
         min-width: 32px;
         height: 32px;
         padding: 0;

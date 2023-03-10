@@ -1,0 +1,178 @@
+@@include("partials/main.html")
+
+<head>
+
+    @@include("partials/title-meta.html", {"title":"Perfil"})
+
+    <!-- plugins -->
+    <link href="assets/libs/choices.js/public/assets/styles/choices.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/flatpickr/flatpickr.min.css" rel="stylesheet"> @@include("partials/head-css.html")
+
+</head>
+
+<body data-topbar="dark">
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        @@include("partials/topbar.html", {"pagetitle":"layouts","title":"Perfil"}) @@include("partials/sidebar.html")
+
+        <div class="main-content">
+            <div class="page-content profile">
+                <div class="container-fluid">
+                    <div class="card">
+                        <div class="card-body p-5">
+
+                            <div class="row profile-info justify-content-between align-items-center mb-5">
+                                <div class="col-12 col-md-6">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <div class="avatar-wrapper">
+                                                <img src="/assets/images/users/avatar-11.png">
+                                                <div class="btn-edit bg-light">
+                                                    <i class="mdi mdi-pencil-outline"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <h4 class="fw-500">Perfil</h4>
+                                            <p class="text-muted m-0">Update your photo and personal details.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 mt-3 mt-md-0">
+                                    <div class="row justify-content-end">
+                                        <button type="button" class="btn btn-secondary d-flex align-items-center w-auto">
+                                            <i class="bx bx-save font-size-24"></i>
+                                            <span style="padding-left: 5px">Save Changes</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <form class="needs-validation" novalidate="">
+                                        <div class="card border-0 shadow-none">
+                                            <div class="row">
+                                                <div class="mb-2">
+                                                    <span class="h6 fw-semibold text-muted">Account</h5>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="mb-4">
+                                                        <input class="form-control form-control-lg" type="text" placeholder="Username">
+                                                    </div>
+                                                    <div class="mb-4">
+                                                        <input class="form-control form-control-lg" type="text" placeholder="Password">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                </div>
+                                            </div>
+                                            
+                                            <hr class="mb-4"/>
+
+                                            <div class="row">
+                                                <div class="mb-2">
+                                                    <span class="h6 fw-semibold text-muted">Profile</h5>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="mb-4">
+                                                        <input class="form-control form-control-lg" type="text" placeholder="Name">
+                                                    </div>
+                                                    <div class="mb-4">
+                                                        <input class="form-control form-control-lg" type="text" placeholder="Last Name">
+                                                    </div>
+                                                    <div class="mb-4">
+                                                        <input class="form-control form-control-lg" type="text" placeholder="Associated Email">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="mb-4">
+                                                        <input class="form-control form-control-lg" type="text" placeholder="Discord User">
+                                                    </div>
+                                                    <div class="mb-4">
+                                                        <input class="form-control form-control-lg" type="text" placeholder="Phone">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <hr class="mb-4"/>
+                                            <div class="row">
+                                                <div class="mb-2">
+                                                    <span class="h6 fw-semibold text-muted">Investor Info</h5>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="mb-4">
+                                                        <select class="form-control form-control-lg" data-trigger name="choices-single-default" id="choices-single-default">
+                                                                <option value="">Comprar para vender? </option>
+                                                                <option value="Choice 1">Choice 1</option>
+                                                                <option value="Choice 2">Choice 2</option>
+                                                                <option value="Choice 3">Choice 3</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="mb-4">
+                                                        <select class="form-control form-control-lg" data-trigger name="choices-single-default" id="choices-single-default">
+                                                                <option value="">Comprar para vender? </option>
+                                                                <option value="Choice 1">Choice 1</option>
+                                                                <option value="Choice 2">Choice 2</option>
+                                                                <option value="Choice 3">Choice 3</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="mb-4">
+                                                        <select class="form-control form-control-lg" data-trigger name="choices-single-default" id="choices-single-default">
+                                                                <option value="">Comprar para vender? </option>
+                                                                <option value="Choice 1">Choice 1</option>
+                                                                <option value="Choice 2">Choice 2</option>
+                                                                <option value="Choice 3">Choice 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="mb-4">
+                                                        <input class="form-control form-control-lg" type="text" placeholder="Rentabilidad Venta">
+                                                    </div>
+                                                    <div class="mb-4">
+                                                        <input class="form-control form-control-lg" type="text" placeholder="Rentabilidad Compra">
+                                                    </div>
+                                                    <div class="row align-items-center">
+                                                        <span class="col-auto text-muted">Ticket Operacion:</span>
+                                                    <span class="col-3"><input class="form-control form-control-lg" type="text" placeholder=""></span>
+                                                    <span class="col-auto text-muted">-</span>
+                                                    <span class="col-3"><input class="form-control form-control-lg" type="text" placeholder=""></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+
+                            </div>
+                            <!-- end row -->
+
+                        </div>
+                    </div>
+                </div>
+                <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
+
+            @@include("partials/footer.html")
+        </div>
+        <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+    @@include("partials/vendor-scripts.html")
+
+
+    <!-- plugins -->
+    <script src="assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="assets/libs/flatpickr/flatpickr.min.js"></script>
+
+    <script src="assets/js/pages/form.init.js"></script>
+
+    <script src="assets/js/app.js"></script>
+
+
+</body>
+
+</html>
